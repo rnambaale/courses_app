@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/45708b0643978a974a3e/maintainability)](https://codeclimate.com/github/rnambaale/courses_app/maintainability)
+
 # Starter Kit for [Building Applications in React and Redux](http://www.pluralsight.com/author/cory-house) on Pluralsight
 
 ## Get Started
