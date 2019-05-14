@@ -1,19 +1,11 @@
-stages:
-    - build
-    - test
-    
-Job One:
-    stage: build
-    script: 
-        - echo "Building"
-        - mkdir build
-        - touch build/info.txt
-    artifacts:
-        paths:
-            - build/
-
-Job Two:
-    stage: test
-    script:
-        - echo "Testing"
-        - test -f "build/info.txt"
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+script:
+  - npm test
+  - npm run build
+on:
+  branch: master
