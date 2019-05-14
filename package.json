@@ -11,8 +11,8 @@
     "clean:build": "rimraf ./build && mkdir build",
     "prebuild": "run-p clean:build test:ci",
     "build": "",
-    "postbuild": "run-p start:api serve:build",
-    "serve:build": "http-server ./build"
+    "postbuild": "",
+    "serve:build": ""
   },
   "jest": {
     "setupFiles": [
@@ -114,7 +114,9 @@
   },
   "comments": {
     "scripts": {
-      "build": "webpack --config webpack.config.prod.js"
+      "build": "webpack --config webpack.config.prod.js",
+      "postbuild": "run-p start:api serve:build",
+      "serve:build": "http-server ./build"
     }
   }
 }
