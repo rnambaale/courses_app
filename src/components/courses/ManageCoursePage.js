@@ -63,8 +63,8 @@ export function ManageCoursePage({
     const errors = {};
 
     if (!title) errors.title = "Title is required.";
-    if (!authorId) errors.author = "Author is required";
-    if (!category) errors.category = "Category is required";
+    if (!authorId) errors.author = "Author is required.";
+    if (!category) errors.category = "Category is required.";
 
     setErrors(errors);
     // Form is valid if the errors object still has no properties
@@ -79,7 +79,7 @@ export function ManageCoursePage({
     setSaving(true);
     saveCourse(course)
       .then(() => {
-        toast.success("Course saved");
+        toast.success("Course saved!");
         history.push("/courses");
       })
       .catch(error => {
