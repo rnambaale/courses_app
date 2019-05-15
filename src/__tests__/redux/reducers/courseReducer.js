@@ -1,6 +1,4 @@
-import React from "react";
 import courseReducer from "../../../redux/reducers/courseReducer";
-import * as actionTypes from "../../../redux/actionTypes";
 import * as courseActions from "../../../redux/actions/courseActions";
 
 describe("course reducer", () => {

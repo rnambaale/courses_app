@@ -1,6 +1,6 @@
 import React from "react";
 import { ManageCoursePage } from "../../../components/courses/ManageCoursePage";
-import { mount, shallow } from "enzyme";
+import { mount } from "enzyme";
 import { authors, newCourse, courses } from "../../../../tools/mockData";
 
 function renderManageCoursePage(args) {
