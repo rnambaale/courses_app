@@ -1,10 +1,19 @@
+sudo: false
+
 language: node_js
 node_js:
   - "stable"
+
 cache:
   directories:
     - node_modules
+
 script:
+  - npm run test:coveralls
   - npm run build
+
+notifications:
+  - email: false
+
 on:
   branch: master
