@@ -4,7 +4,7 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/rnambaale/courses_app/badge.svg)](https://coveralls.io/github/rnambaale/courses_app)
 
-# Starter Kit for [Building Applications in React and Redux](http://www.pluralsight.com/author/cory-house) on Pluralsight
+# Starter Kit for [React and Redux]
 
 ## Get Started
 
